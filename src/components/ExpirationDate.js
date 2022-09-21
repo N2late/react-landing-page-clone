@@ -48,24 +48,20 @@ const foodItemsStyle = css`
     position: relative;
     top: 33%;
     left: -28%;
-    z-index: 4;
   }
   > div:nth-child(3) {
     position: relative;
     top: 13%;
     right: -16%;
-    z-index: 5;
   }
 `;
 
 const cardContainerStyle = css`
   position: relative;
-  display: inline-block;
   width: 50%;
   > img:nth-child(1) {
     border-radius: 20px;
-    box-shadow: rgb(0 0 0 / 15%) 0px 4px 24px;
-    color: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0 / 50%) 0px 2px 15px;
     width: 80%;
   }
 `;
@@ -96,9 +92,10 @@ const colorMilkStyle = css`
 `;
 
 const expiresInStyle = css`
-  opacity: 1;
-  z-index: 7;
+  z-index: 3;
 `;
+
+const expires2Style = css``;
 
 function ExpiratationDate() {
   return (
@@ -122,7 +119,7 @@ function ExpiratationDate() {
           <img css={expiresInStyle} src={expiresIn} alt="expiration time" />
         </div>
         <div css={cardContainerStyle}>
-          <img css={expiresInStyle} src={expires} alt="expiration time" />
+          <img css={expires2Style} src={expires} alt="expiration time" />
         </div>
       </div>
     </div>

@@ -7,7 +7,9 @@ const containerStyle = css`
   height: 80px;
   display: flex;
   margin-top: 4px;
-  padding: 16px 40px;
+  max-width: 1440px;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: space-between;
   align-items: center;
 `;
